@@ -1,0 +1,111 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flip-card {
+    width: 25%;
+    height: 350px;
+    margin: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.back,
+.front {
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s linear;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+}
+
+.red {
+    background-color: red;
+}
+
+.back {
+    transform: perspective(600px) rotateX(-180deg);
+}
+
+.card-rotate .back {
+    transform: perspective(600px) rotateX(0deg);
+}
+
+.card-rotate .front {
+    transform: perspective(600px) rotateX(180deg);
+}
+
+.front {
+    background-image: url(media/f1.jpeg);
+    background-size: cover;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+.front:hover {
+    background-blend-mode: multiply;
+}
+
+.front p {
+    position: absolute;
+    bottom: 0;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc .divider {
+    margin: 0 0 .5rem;
+    width: 10rem;
+    height: 1px;
+    background-color: white;
+}
+
+.front p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.desc span {
+    padding-bottom: .8rem;
+}
+
+.p {
+    z-index: -1;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2rem #B50E22 solid;
+    padding: 0 .5rem;
+}
+
+.back img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.back em {
+    font-weight: 200;
+    padding: 0 .5rem;
+    text-align: center;
+}
