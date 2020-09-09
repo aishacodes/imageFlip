@@ -2,6 +2,19 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
+    background-color: thistle;
+}
+
+h1 {
+    font-style: italic;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
 }
 
 * {
@@ -11,7 +24,7 @@ body {
 .flip-card {
     width: 25%;
     height: 350px;
-    margin: 40px;
+    margin: 2rem;
     position: relative;
     cursor: pointer;
 }
@@ -44,9 +57,8 @@ body {
 }
 
 .front {
-    background-image: url(media/f1.jpeg);
     background-size: cover;
-    background-color: gray;
+    background-color: #A49B9B;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -94,7 +106,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2rem #B50E22 solid;
+    border: 1.5rem #B50E22 solid;
     padding: 0 .5rem;
 }
 
