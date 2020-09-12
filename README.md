@@ -1,5 +1,5 @@
 # imageFlip
-**An implementation of alphabet with HTML/CSS/Vanilla JS**
+**An implementation of flower card flip with HTML/CSS/Jquery**
 
 ## Getting Started
 Clone or download this repository and run with a local server of open index.html with your favorite browser
@@ -12,7 +12,7 @@ Your browser version must be recent for a better experience
 ## Built with
 - HTML
 - CSS
-- Vanilla JS
+- Jquery
 ## Author
 Abdulfatah Aishat aishatabdulfatah81@gmail.com 
 ## Addtional Info
